@@ -2,7 +2,7 @@ import {Router} from "express"
 import jwt from "jsonwebtoken"
 import { checkToken, Final, firstLogin, isSelected, saveToken, thank } from "../controller/controller.js";
 import { confirmPasswords } from "../middleware/confirm.js";
-import { registerUser, resetPassword, verifyOtp,resendOtp, setNewPassword } from "../controller/LoginController.js";
+import { registerUser, resetPassword, verifyOtp,resendOtp, setNewPassword } from "../controller/loginController.js";
 import passport from "../../config/passport.config.js"
 
 export const userRoutes = Router();
